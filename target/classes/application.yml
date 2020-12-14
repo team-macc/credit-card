@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: creditcard
+  datasource:
+    #url: jdbc:mysql://creditcard-db-1-mysql/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
+    #url: jdbc:mysql://creditcard-db-1-mysql/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/creditcard?allowPublicKeyRetrieval=true&Mode=DISABLED&useSSL=false&serverTimezone=UTC
+    #password: root
+    #username: root
+    username: microservices
+    password: Microservices@123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        #dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
