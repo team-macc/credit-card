@@ -13,10 +13,13 @@ spec:
   type: NodePort
 ---
 kind: Deployment
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 metadata:
   name: creditcard
 spec:
+  selector:
+    matchLabels:
+      app: creditcard
   replicas: 1
   template:
     metadata:
