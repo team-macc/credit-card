@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: creditcard
-        image: samuelpereiradesouza/creditcard:1
+        image: samuelpereiradesouza/credit-card:5
         ports:
         - containerPort: 8080
       restartPolicy: Always

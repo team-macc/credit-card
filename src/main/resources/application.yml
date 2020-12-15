@@ -1,13 +1,14 @@
 spring:
   application:
     name: creditcard
-  datasource:
-    url: jdbc:mysql://creditcard-db-1-mysql/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
-    password: 1234qwer
-    username: root
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://payment-db-postgresql/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
+    password: FnaKohL7ib
+    username: postgres
