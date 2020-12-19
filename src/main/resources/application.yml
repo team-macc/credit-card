@@ -9,6 +9,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://payment-db-postgresql/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
-    password: FnaKohL7ib
-    username: postgres
+    url: jdbc:postgresql://104.154.190.156/creditcard?allowPublicKeyRetrieval=true&sslMode=DISABLED&useSSL=false&serverTimezone=UTC
+    username: macc
+    password: 1234qwer
